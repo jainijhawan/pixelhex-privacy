@@ -11,26 +11,26 @@ Once published, your privacy policies will be available at:
 https://[your-username].github.io/pixelhex-privacy/
 ```
 
-### Localized Versions
+### Privacy Policy & Support URLs by Localization
 
-| Language | App Store Code | URL |
-|----------|---------------|-----|
-| English (US) | Default | `https://[your-username].github.io/pixelhex-privacy/` |
-| English (UK) | en-GB | `https://[your-username].github.io/pixelhex-privacy/en-GB.html` |
-| English (Canada) | en-CA | `https://[your-username].github.io/pixelhex-privacy/en-CA.html` |
-| English (Australia) | en-AU | `https://[your-username].github.io/pixelhex-privacy/en-AU.html` |
-| French (France) | fr | `https://[your-username].github.io/pixelhex-privacy/fr.html` |
-| French (Canada) | fr-CA | `https://[your-username].github.io/pixelhex-privacy/fr-CA.html` |
-| Spanish (Spain) | es-ES | `https://[your-username].github.io/pixelhex-privacy/es-ES.html` |
-| Spanish (Mexico) | es-MX | `https://[your-username].github.io/pixelhex-privacy/es-MX.html` |
-| Portuguese (Portugal) | pt-PT | `https://[your-username].github.io/pixelhex-privacy/pt-PT.html` |
-| Portuguese (Brazil) | pt-BR | `https://[your-username].github.io/pixelhex-privacy/pt-BR.html` |
-| Korean | ko | `https://[your-username].github.io/pixelhex-privacy/ko.html` |
-| Chinese (Simplified) | zh-Hans | `https://[your-username].github.io/pixelhex-privacy/zh-Hans.html` |
-| Chinese (Traditional) | zh-Hant | `https://[your-username].github.io/pixelhex-privacy/zh-Hant.html` |
-| Vietnamese | vi | `https://[your-username].github.io/pixelhex-privacy/vi.html` |
-| Russian | ru | `https://[your-username].github.io/pixelhex-privacy/ru.html` |
-| Arabic | ar | `https://[your-username].github.io/pixelhex-privacy/ar.html` |
+| Language | App Store Code | Privacy URL | Support URL |
+|----------|---------------|-------------|-------------|
+| English (US) | Default | `https://[your-username].github.io/pixelhex-privacy/` | `https://[your-username].github.io/pixelhex-privacy/support.html` |
+| English (UK) | en-GB | `https://[your-username].github.io/pixelhex-privacy/en-GB.html` | `https://[your-username].github.io/pixelhex-privacy/support.html` |
+| English (Canada) | en-CA | `https://[your-username].github.io/pixelhex-privacy/en-CA.html` | `https://[your-username].github.io/pixelhex-privacy/support.html` |
+| English (Australia) | en-AU | `https://[your-username].github.io/pixelhex-privacy/en-AU.html` | `https://[your-username].github.io/pixelhex-privacy/support.html` |
+| French (France) | fr | `https://[your-username].github.io/pixelhex-privacy/fr.html` | `https://[your-username].github.io/pixelhex-privacy/support-fr.html` |
+| French (Canada) | fr-CA | `https://[your-username].github.io/pixelhex-privacy/fr-CA.html` | `https://[your-username].github.io/pixelhex-privacy/support-fr.html` |
+| Spanish (Spain) | es-ES | `https://[your-username].github.io/pixelhex-privacy/es-ES.html` | `https://[your-username].github.io/pixelhex-privacy/support-es.html` |
+| Spanish (Mexico) | es-MX | `https://[your-username].github.io/pixelhex-privacy/es-MX.html` | `https://[your-username].github.io/pixelhex-privacy/support-es.html` |
+| Portuguese (Portugal) | pt-PT | `https://[your-username].github.io/pixelhex-privacy/pt-PT.html` | `https://[your-username].github.io/pixelhex-privacy/support-pt.html` |
+| Portuguese (Brazil) | pt-BR | `https://[your-username].github.io/pixelhex-privacy/pt-BR.html` | `https://[your-username].github.io/pixelhex-privacy/support-pt.html` |
+| Korean | ko | `https://[your-username].github.io/pixelhex-privacy/ko.html` | `https://[your-username].github.io/pixelhex-privacy/support-ko.html` |
+| Chinese (Simplified) | zh-Hans | `https://[your-username].github.io/pixelhex-privacy/zh-Hans.html` | `https://[your-username].github.io/pixelhex-privacy/support-zh-Hans.html` |
+| Chinese (Traditional) | zh-Hant | `https://[your-username].github.io/pixelhex-privacy/zh-Hant.html` | `https://[your-username].github.io/pixelhex-privacy/support-zh-Hant.html` |
+| Vietnamese | vi | `https://[your-username].github.io/pixelhex-privacy/vi.html` | `https://[your-username].github.io/pixelhex-privacy/support-vi.html` |
+| Russian | ru | `https://[your-username].github.io/pixelhex-privacy/ru.html` | `https://[your-username].github.io/pixelhex-privacy/support-ru.html` |
+| Arabic | ar | `https://[your-username].github.io/pixelhex-privacy/ar.html` | `https://[your-username].github.io/pixelhex-privacy/support-ar.html` |
 
 ## Setup Instructions
 
@@ -61,6 +61,13 @@ git push -u origin main
 
 When configuring your app in App Store Connect:
 
+#### Support URL (Required)
+In your app's **General Information** section:
+```
+https://[your-username].github.io/pixelhex-privacy/support.html
+```
+
+#### Privacy Policy URLs
 1. Go to your app's **App Privacy** section
 2. For each localization that requires a Privacy Policy URL, use the corresponding URL from the table above
 3. Replace `[your-username]` with your actual GitHub username
@@ -72,7 +79,8 @@ When configuring your app in App Store Connect:
 
 ## Files Included
 
-- `index.html` - English (US) - Default page
+### Privacy Policy Pages
+- `index.html` - English (US) - Default privacy policy page
 - `en-GB.html` - English (UK)
 - `en-CA.html` - English (Canada) with PIPEDA references
 - `en-AU.html` - English (Australia) with Australian Privacy Principles
@@ -89,12 +97,34 @@ When configuring your app in App Store Connect:
 - `ru.html` - Russian
 - `ar.html` - Arabic (RTL layout)
 
-Each file includes:
+### Support Pages
+- `support.html` - English (US, UK, Canada, Australia)
+- `support-ko.html` - Korean
+- `support-fr.html` - French (France & Canada)
+- `support-es.html` - Spanish (Spain & Mexico)
+- `support-pt.html` - Portuguese (Portugal & Brazil)
+- `support-zh-Hans.html` - Chinese (Simplified)
+- `support-zh-Hant.html` - Chinese (Traditional)
+- `support-vi.html` - Vietnamese
+- `support-ru.html` - Russian
+- `support-ar.html` - Arabic (RTL layout)
+
+Each privacy policy file includes:
 - Translated privacy policy content
 - Appropriate regional compliance references (GDPR, CCPA, PIPEDA, LGPD, etc.)
 - Your contact information
 - Responsive design for mobile and desktop
 - Professional Apple-style aesthetics
+
+Each support page includes:
+- Contact information with your email
+- FAQs for common questions
+- Getting started guide
+- Troubleshooting tips
+- Feature highlights
+- Subscription management information
+- Responsive design for all devices
+- Professional gradient contact section
 
 ## Making Updates
 
